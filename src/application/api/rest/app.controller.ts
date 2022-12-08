@@ -9,7 +9,7 @@ export class AppController {
   @Get()
   getAppName(): string {
     return (
-      '${template.project_name}<br>Node mode: ' +
+      'my-service<br>Node mode: ' +
       this.configService.get('application.nodeEnv')
     );
   }

@@ -10,7 +10,7 @@ export class ApiDocSetup {
     const azureConfig = configService.get('authentication.azure');
 
     const config = new DocumentBuilder()
-      .setTitle('${template.project_name}')
+      .setTitle('my-service')
       .setDescription('[A detalhar]')
       .setVersion('1.0')
       .addBearerAuth(
